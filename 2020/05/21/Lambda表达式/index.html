@@ -20,28 +20,33 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="SweetCode">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="Lambda表达式1&#96;new Thread(() -&gt; System.out.println(&quot;Hello Lambda&quot; )).start();&#96;  这是Lambda表达式的使用，相信第一次看到Lambda表达式十分难以理解 1() -&gt; System.out.println(&quot;Hello Lambda&quot; )&#96;  这块代码究竟是什么，下面我们详细的了解一下Lambda表达式  Lam">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Lambda表达式">
+<meta property="og:url" content="http://yoursite.com/2020/05/21/Lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F/index.html">
 <meta property="og:site_name" content="SweetCode">
+<meta property="og:description" content="Lambda表达式1&#96;new Thread(() -&gt; System.out.println(&quot;Hello Lambda&quot; )).start();&#96;  这是Lambda表达式的使用，相信第一次看到Lambda表达式十分难以理解 1() -&gt; System.out.println(&quot;Hello Lambda&quot; )&#96;  这块代码究竟是什么，下面我们详细的了解一下Lambda表达式  Lam">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-05-21T06:18:49.000Z">
+<meta property="article:modified_time" content="2020-05-21T14:19:42.448Z">
 <meta property="article:author" content="SweetCode">
+<meta property="article:tag" content="java8新特性">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/">
+<link rel="canonical" href="http://yoursite.com/2020/05/21/Lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>SweetCode</title>
+  <title>Lambda表达式 | SweetCode</title>
   
 
 
@@ -154,9 +159,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -172,10 +178,9 @@
       <meta itemprop="name" content="SweetCode">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/21/Lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="post-title-link" itemprop="url">Lambda表达式</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Lambda表达式
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -199,7 +204,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="Lambda表达式"><a href="#Lambda表达式" class="headerlink" title="Lambda表达式"></a>Lambda表达式</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`<span class="keyword">new</span> Thread(() -&gt; System.out.println(<span class="string">"Hello Lambda"</span> )).start();`</span><br></pre></td></tr></table></figure>
+        <h1 id="Lambda表达式"><a href="#Lambda表达式" class="headerlink" title="Lambda表达式"></a>Lambda表达式</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`<span class="keyword">new</span> Thread(() -&gt; System.out.println(<span class="string">"Hello Lambda"</span> )).start();`</span><br></pre></td></tr></table></figure>
 
 <p>这是Lambda表达式的使用，相信第一次看到Lambda表达式十分难以理解</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">() -&gt; System.out.println(<span class="string">"Hello Lambda"</span> )`</span><br></pre></td></tr></table></figure>
@@ -264,286 +269,33 @@
 <p>多线程中由于Runnable接口，它只包含唯一一个抽象方法run，所以有时也能看见这样的写法。</p>
 <p>大家可以动手实践一下，Lambda表达式或许刚开始使用看着很不习惯，但是习惯之后看着代码十分简洁，也算是编程的一种乐趣吧。</p>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+          <div class="post-tags">
+              <a href="/tags/java8%E6%96%B0%E7%89%B9%E6%80%A7/" rel="tag"># java8新特性</a>
+          </div>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/20/thymeleaf%E8%B8%A9%E5%9D%91/">
+        
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://pic2.zhimg.com/80/v2-f2a5ccbf16a8cca24d300423b1dca971_720w.jpg">
-      <meta itemprop="name" content="SweetCode">
-      <meta itemprop="description" content="">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SweetCode">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/20/thymeleaf%E8%B8%A9%E5%9D%91/" class="post-title-link" itemprop="url">thymeleaf踩坑</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-05-20 16:49:12" itemprop="dateCreated datePublished" datetime="2020-05-20T16:49:12+08:00">2020-05-20</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="thymeleaf踩坑"><a href="#thymeleaf踩坑" class="headerlink" title="thymeleaf踩坑"></a>thymeleaf踩坑</h1><h2 id="1"><a href="#1" class="headerlink" title="1"></a>1</h2><p>今天测试时</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RequestMapping</span>(<span class="string">"/index"</span>)</span><br><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">test</span><span class="params">(Model model)</span></span>&#123;</span><br><span class="line">    model.addAttribute(<span class="string">"msg"</span>,<span class="string">"hello"</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"index"</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>希望吧hello字符串放到msg中，在html中打印。</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">th:text</span>=<span class="string">"$&#123;msg&#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>但是在页面里没有内容出现。</p>
-<p>后来发现这个参数必须访问 <strong>localhost:8080/index</strong>,而访问<strong>localhost:8080</strong>是没有用的。<br>requestMapping指定了路径，如果不访问index，就请求不了你、这个控制器的方法，也就没返回数据。</p>
-<p>这是一个细小的错误。记得刚开始用${}取数据时，也经历过没有使用重定向<strong>redirect</strong>使得数据无法返回的情况，这次的情况同理。</p>
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/05/20/thymeleaf%E8%B8%A9%E5%9D%91/" rel="prev" title="thymeleaf踩坑">
+      <i class="fa fa-chevron-left"></i> thymeleaf踩坑
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/20/Shiro/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://pic2.zhimg.com/80/v2-f2a5ccbf16a8cca24d300423b1dca971_720w.jpg">
-      <meta itemprop="name" content="SweetCode">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SweetCode">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/20/Shiro/" class="post-title-link" itemprop="url">Shiro</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-05-20 15:58:44" itemprop="dateCreated datePublished" datetime="2020-05-20T15:58:44+08:00">2020-05-20</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="SpringBoot"><a href="#SpringBoot" class="headerlink" title="SpringBoot"></a>SpringBoot</h1><h2 id="整合Shiro"><a href="#整合Shiro" class="headerlink" title="整合Shiro"></a>整合Shiro</h2>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/19/Hexo/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://pic2.zhimg.com/80/v2-f2a5ccbf16a8cca24d300423b1dca971_720w.jpg">
-      <meta itemprop="name" content="SweetCode">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SweetCode">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/19/Hexo/" class="post-title-link" itemprop="url">hexo</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-05-19 14:18:49 / 修改时间：14:48:15" itemprop="dateCreated datePublished" datetime="2020-05-19T14:18:49+08:00">2020-05-19</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h1><h3 id="Next主题踩坑日记"><a href="#Next主题踩坑日记" class="headerlink" title="Next主题踩坑日记"></a>Next主题踩坑日记</h3><h3 id="1：Cannot-GET-tags-20"><a href="#1：Cannot-GET-tags-20" class="headerlink" title="1：Cannot GET /tags/%20/"></a>1：Cannot GET /tags/%20/</h3><p>其他一些都正常但是当使用菜单页面：如tags home等出现Cannot GET /tags/%20/</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Cannot GET &#x2F;tags&#x2F;%20&#x2F;</span><br></pre></td></tr></table></figure>
-
-<p>这个问题困扰了我很久，网上太多解决方法都没有作用。</p>
-<p>后来在next的github的issues下发现，有人提到在config.yml文件第94行中把以下</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line"><span class="attr">home:</span> <span class="string">/</span> <span class="string">||</span> <span class="string">home</span></span><br></pre></td></tr></table></figure>
-
-<p>改为</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line"><span class="attr">home:</span> <span class="string">/||</span> <span class="string">home</span></span><br></pre></td></tr></table></figure>
-
-<p>这样之后问题在本地部署时解决了，但是在远程部署后又出现了问题。</p>
-<p>如果你也遇到了这样的问题，建议换一下next主题的下载地址</p>
-<p>next官网上的仓库早就停止维护了，需要去用新仓库。</p>
-<p><a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">https://github.com/theme-next/hexo-theme-next</a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;hexo-theme-next themes&#x2F;next</span><br></pre></td></tr></table></figure>
-
-<p>安装这的仓库命令。</p>
-<p>其中可以在language包下发现，language的中文配置有zh-cn变为了zh-CN。还有很多其他细节的改动。</p>
-<h3 id="2：tags标签页"><a href="#2：tags标签页" class="headerlink" title="2：tags标签页"></a>2：tags标签页</h3><p>tags的标签页出现问题，添加不上标签页。</p>
-<p>在git里成功输入了   hexo new page tags` 后在source/tags/index.md中编辑</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: tags</span><br><span class="line">date: 2020-05-18 21:40:58</span><br><span class="line">type: &quot;tags&quot;</span><br></pre></td></tr></table></figure>
-
-<p>一定要注意<strong>空格和冒号，引号都为英文</strong></p>
-<p>其他的分类页等等的也是同样的道理，编辑时涉及到中英文切换时，一定要确定标点符号的使用。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/19/SpringBoot/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://pic2.zhimg.com/80/v2-f2a5ccbf16a8cca24d300423b1dca971_720w.jpg">
-      <meta itemprop="name" content="SweetCode">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SweetCode">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/19/SpringBoot/" class="post-title-link" itemprop="url">springboot</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-05-19 12:34:49 / 修改时间：14:31:12" itemprop="dateCreated datePublished" datetime="2020-05-19T12:34:49+08:00">2020-05-19</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="SpringBoot"><a href="#SpringBoot" class="headerlink" title="SpringBoot"></a>SpringBoot</h1><h2 id="自动装配原理初探"><a href="#自动装配原理初探" class="headerlink" title="自动装配原理初探"></a>自动装配原理初探</h2><p>记得第一次使用SpringBoot编写程序，编写的自然就是“Hello World”。</p>
-<p>当网页上第一次看到“Hello World”的时候，真的有种激动的心情，同时又很好奇这究竟是怎么跑起来的。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
@@ -596,6 +348,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Lambda表达式"><span class="nav-number">1.</span> <span class="nav-text">Lambda表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#函数式接口"><span class="nav-number">1.0.1.</span> <span class="nav-text">函数式接口</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实例"><span class="nav-number">1.1.</span> <span class="nav-text">实例</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#外部类"><span class="nav-number">1.1.1.</span> <span class="nav-text">外部类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#静态内部类"><span class="nav-number">1.1.2.</span> <span class="nav-text">静态内部类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#局部内部类"><span class="nav-number">1.1.3.</span> <span class="nav-text">局部内部类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#匿名内部类"><span class="nav-number">1.1.4.</span> <span class="nav-text">匿名内部类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Lambda"><span class="nav-number">1.1.5.</span> <span class="nav-text">Lambda</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

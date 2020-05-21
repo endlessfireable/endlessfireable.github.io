@@ -20,20 +20,15 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="HexoNext主题踩坑日记1：Cannot GET &#x2F;tags&#x2F;%20&#x2F;其他一些都正常但是当使用菜单页面：如tags home等出现Cannot GET &#x2F;tags&#x2F;%20&#x2F; 1Cannot GET &#x2F;tags&#x2F;%20&#x2F;  这个问题困扰了我很久，网上太多解决方法都没有作用。 后来在next的github的issues下发现，有人提到在config.yml文件第94行">
-<meta property="og:type" content="article">
-<meta property="og:title" content="hexo">
-<meta property="og:url" content="http://yoursite.com/2020/05/19/Hexo/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="SweetCode">
+<meta property="og:url" content="http://yoursite.com/tags/java8%E6%96%B0%E7%89%B9%E6%80%A7/index.html">
 <meta property="og:site_name" content="SweetCode">
-<meta property="og:description" content="HexoNext主题踩坑日记1：Cannot GET &#x2F;tags&#x2F;%20&#x2F;其他一些都正常但是当使用菜单页面：如tags home等出现Cannot GET &#x2F;tags&#x2F;%20&#x2F; 1Cannot GET &#x2F;tags&#x2F;%20&#x2F;  这个问题困扰了我很久，网上太多解决方法都没有作用。 后来在next的github的issues下发现，有人提到在config.yml文件第94行">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-05-19T06:18:49.000Z">
-<meta property="article:modified_time" content="2020-05-19T06:48:15.856Z">
 <meta property="article:author" content="SweetCode">
-<meta property="article:tag" content="Hexo next">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/2020/05/19/Hexo/">
+<link rel="canonical" href="http://yoursite.com/tags/java8%E6%96%B0%E7%89%B9%E6%80%A7/">
 
 
 <script id="page-configurations">
@@ -41,12 +36,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : true,
+    isPost : false,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>hexo | SweetCode</title>
+  <title>标签: java8新特性 | SweetCode</title>
   
 
 
@@ -159,106 +154,51 @@
         <div class="content-wrap">
           
 
-          <div class="content post posts-expand">
+          <div class="content tag">
             
 
-    
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/19/Hexo/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://pic2.zhimg.com/80/v2-f2a5ccbf16a8cca24d300423b1dca971_720w.jpg">
-      <meta itemprop="name" content="SweetCode">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SweetCode">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          hexo
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-05-19 14:18:49 / 修改时间：14:48:15" itemprop="dateCreated datePublished" datetime="2020-05-19T14:18:49+08:00">2020-05-19</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+  
+  <div class="post-block">
+    <div class="posts-collapse">
+      <div class="collection-title">
+        <h2 class="collection-header">java8新特性
+          <small>标签</small>
+        </h2>
+      </div>
 
       
-        <h1 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h1><h3 id="Next主题踩坑日记"><a href="#Next主题踩坑日记" class="headerlink" title="Next主题踩坑日记"></a>Next主题踩坑日记</h3><h3 id="1：Cannot-GET-tags-20"><a href="#1：Cannot-GET-tags-20" class="headerlink" title="1：Cannot GET /tags/%20/"></a>1：Cannot GET /tags/%20/</h3><p>其他一些都正常但是当使用菜单页面：如tags home等出现Cannot GET /tags/%20/</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Cannot GET &#x2F;tags&#x2F;%20&#x2F;</span><br></pre></td></tr></table></figure>
-
-<p>这个问题困扰了我很久，网上太多解决方法都没有作用。</p>
-<p>后来在next的github的issues下发现，有人提到在config.yml文件第94行中把以下</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line"><span class="attr">home:</span> <span class="string">/</span> <span class="string">||</span> <span class="string">home</span></span><br></pre></td></tr></table></figure>
-
-<p>改为</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line"><span class="attr">home:</span> <span class="string">/||</span> <span class="string">home</span></span><br></pre></td></tr></table></figure>
-
-<p>这样之后问题在本地部署时解决了，但是在远程部署后又出现了问题。</p>
-<p>如果你也遇到了这样的问题，建议换一下next主题的下载地址</p>
-<p>next官网上的仓库早就停止维护了，需要去用新仓库。</p>
-<p><a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">https://github.com/theme-next/hexo-theme-next</a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;hexo-theme-next themes&#x2F;next</span><br></pre></td></tr></table></figure>
-
-<p>安装这的仓库命令。</p>
-<p>其中可以在language包下发现，language的中文配置有zh-cn变为了zh-CN。还有很多其他细节的改动。</p>
-<h3 id="2：tags标签页"><a href="#2：tags标签页" class="headerlink" title="2：tags标签页"></a>2：tags标签页</h3><p>tags的标签页出现问题，添加不上标签页。</p>
-<p>在git里成功输入了   hexo new page tags` 后在source/tags/index.md中编辑</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: tags</span><br><span class="line">date: 2020-05-18 21:40:58</span><br><span class="line">type: &quot;tags&quot;</span><br></pre></td></tr></table></figure>
-
-<p>一定要注意<strong>空格和冒号，引号都为英文</strong></p>
-<p>其他的分类页等等的也是同样的道理，编辑时涉及到中英文切换时，一定要确定标点符号的使用。</p>
-
+    <div class="collection-year">
+      <span class="collection-header">2020</span>
     </div>
 
-    
-    
-    
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
 
-      <footer class="post-footer">
-          <div class="post-tags">
-              <a href="/tags/Hexo-next/" rel="tag"># Hexo next</a>
-          </div>
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2020-05-21T14:18:49+08:00"
+              content="2020-05-21">
+          05-21
+        </time>
+      </div>
 
-        
+      <div class="post-title">
+          <a class="post-title-link" href="/2020/05/21/Lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F/" itemprop="url">
+            <span itemprop="name">Lambda表达式</span>
+          </a>
+      </div>
 
-
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/2020/05/19/SpringBoot/" rel="prev" title="springboot">
-      <i class="fa fa-chevron-left"></i> springboot
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/05/20/Shiro/" rel="next" title="Shiro">
-      Shiro <i class="fa fa-chevron-right"></i>
-    </a></div>
-    </div>
-      </footer>
-    
+    </header>
   </article>
+
+    </div>
+  </div>
   
   
+  
+
   
 
 
@@ -311,7 +251,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo"><span class="nav-number">1.</span> <span class="nav-text">Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Next主题踩坑日记"><span class="nav-number">1.0.1.</span> <span class="nav-text">Next主题踩坑日记</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1：Cannot-GET-tags-20"><span class="nav-number">1.0.2.</span> <span class="nav-text">1：Cannot GET &#x2F;tags&#x2F;%20&#x2F;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2：tags标签页"><span class="nav-number">1.0.3.</span> <span class="nav-text">2：tags标签页</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
